@@ -1,0 +1,6 @@
+framework module Pods_CoinMarketCapAppTests {
+  umbrella header "Pods-CoinMarketCapAppTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
