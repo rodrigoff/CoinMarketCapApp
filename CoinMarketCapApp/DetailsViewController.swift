@@ -20,7 +20,13 @@ class DetailsViewController: UIViewController {
 
         if let currency = currency {
             title = currency.Symbol
-            iconImageView.image = UIImage(named: currency.Symbol)
+            if let icon = UIImage(named: currency.Symbol) {
+                iconImageView.image = icon
+                iconImageView.alpha = 1
+            } else {
+                iconImageView.image = UIImage(named: "BTC")
+                iconImageView.alpha = 0.5
+            }
             nameLabel.text = currency.Name
         }
      }
