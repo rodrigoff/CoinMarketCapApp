@@ -14,30 +14,30 @@ class Currency: Decodable {
     var Symbol: String
     var Rank: String
     
-    lazy var PriceUsd: Float = Float(price_usd) ?? 0
+    lazy var PriceUsd: Float = Float(price_usd)!
     var price_usd: String
     
-    lazy var PriceBtc: Float = Float(price_btc) ?? 0
+    lazy var PriceBtc: Float = Float(price_btc)!
     var price_btc: String
     
     var LastDayVolumeUsd: String
     
     var MarketCapUsd: String
     
-    lazy var AvailableSupply: Float = Float(available_supply) ?? 0
+    lazy var AvailableSupply: Float = Float(available_supply)!
     var available_supply: String
     
-    lazy var TotalSupply: Float = Float(total_supply) ?? 0
+    lazy var TotalSupply: Float = Float(total_supply)!
     var total_supply: String
     
-    lazy var PercentChange1h: Float = Float(percent_change_1h) ?? 0
+    lazy var PercentChange1h: Float = Float(percent_change_1h)!
     var percent_change_1h: String
     
-    lazy var PercentChange24h: Float = Float(percent_change_24h) ?? 0
+    lazy var PercentChange24h: Float = Float(percent_change_24h)!
     var percent_change_24h: String
 
     
-    lazy var PercentChange7d: Float = Float(percent_change_7d) ?? 0
+    lazy var PercentChange7d: Float = Float(percent_change_7d)!
     var percent_change_7d: String
     
     var LastUpdated: String
