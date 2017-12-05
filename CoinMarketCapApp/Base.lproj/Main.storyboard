@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="J47-3S-Tu3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="J47-3S-Tu3">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -89,11 +89,45 @@
                     <navigationItem key="navigationItem" title="Cryptocurrencies" id="TBV-uy-CG6"/>
                     <connections>
                         <outlet property="tableView" destination="jVH-yB-Q6A" id="QBu-mA-ir8"/>
+                        <segue destination="FID-Hj-6Ci" kind="show" identifier="showDetails" id="sAC-Bw-hDY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="260" y="132.68365817091455"/>
+        </scene>
+        <!--Details View Controller-->
+        <scene sceneID="Vlf-d8-HJg">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vrz-jZ-96X" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="FID-Hj-6Ci" customClass="DetailsViewController" customModule="CoinMarketCapApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pL0-7w-3TR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="umO-A0-qQO">
+                                <rect key="frame" x="16" y="289" width="343" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="75Y-ZP-swp">
+                                <rect key="frame" x="112" y="131" width="150" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="4FU-Cg-fpL"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="3Zd-kT-QuW"/>
+                    <connections>
+                        <outlet property="iconImageView" destination="75Y-ZP-swp" id="2Oh-Td-sWn"/>
+                        <outlet property="nameLabel" destination="umO-A0-qQO" id="hwJ-cS-nM4"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1021.6" y="132.68365817091455"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="LTR-nX-PGC">
@@ -111,7 +145,32 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sez-Xt-fbG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-508" y="133"/>
+            <point key="canvasLocation" x="260" y="-584"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Vnq-zY-akq">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9FM-Eh-yTI" sceneMemberID="viewController">
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="Krb-dp-0Ip">
+                        <rect key="frame" x="0.0" y="20" width="375" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ETq-FK-L2n">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="FID-Hj-6Ci" kind="relationship" relationship="rootViewController" id="Yad-gF-Uca"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ide-9K-4CR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1022" y="-584"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="sAC-Bw-hDY"/>
+    </inferredMetricsTieBreakers>
 </document>

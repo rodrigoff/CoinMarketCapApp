@@ -16,6 +16,7 @@
 		761311481FD4CFE9001DA107 /* CoinMarketCapAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761311471FD4CFE9001DA107 /* CoinMarketCapAPI.swift */; };
 		7613114A1FD4D2F7001DA107 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761311491FD4D2F7001DA107 /* Currency.swift */; };
 		76B8DFD61FD5669500F37775 /* CurrencyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B8DFD51FD5669500F37775 /* CurrencyTableViewCell.swift */; };
+		76E6F3471FD7232B0080A2EE /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E6F3461FD7232B0080A2EE /* DetailsViewController.swift */; };
 		D2F186A76BEE8B8C9C25F518 /* Pods_CoinMarketCapAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 627DED3C12C98F0B3F25A5AC /* Pods_CoinMarketCapAppTests.framework */; };
 		E1BDF9B4D531DE7D665FFA3D /* Pods_CoinMarketCapApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72A468601494D89E4D448C7F /* Pods_CoinMarketCapApp.framework */; };
 /* End PBXBuildFile section */
@@ -47,6 +48,7 @@
 		761311471FD4CFE9001DA107 /* CoinMarketCapAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinMarketCapAPI.swift; sourceTree = "<group>"; };
 		761311491FD4D2F7001DA107 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
 		76B8DFD51FD5669500F37775 /* CurrencyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTableViewCell.swift; sourceTree = "<group>"; };
+		76E6F3461FD7232B0080A2EE /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		B5E0F4EF6488441393D9AA4F /* Pods-CoinMarketCapApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoinMarketCapApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoinMarketCapApp/Pods-CoinMarketCapApp.release.xcconfig"; sourceTree = "<group>"; };
 		DC946FFFFFFBDFA2E5F04EBA /* Pods-CoinMarketCapAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoinMarketCapAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CoinMarketCapAppTests/Pods-CoinMarketCapAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F4B472EDC332020F86775131 /* Pods-CoinMarketCapAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoinMarketCapAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoinMarketCapAppTests/Pods-CoinMarketCapAppTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 				761311321FD4CEEE001DA107 /* Info.plist */,
 				761311491FD4D2F7001DA107 /* Currency.swift */,
 				76B8DFD51FD5669500F37775 /* CurrencyTableViewCell.swift */,
+				76E6F3461FD7232B0080A2EE /* DetailsViewController.swift */,
 			);
 			path = CoinMarketCapApp;
 			sourceTree = "<group>";
@@ -369,6 +372,7 @@
 				761311481FD4CFE9001DA107 /* CoinMarketCapAPI.swift in Sources */,
 				76B8DFD61FD5669500F37775 /* CurrencyTableViewCell.swift in Sources */,
 				761311271FD4CEED001DA107 /* AppDelegate.swift in Sources */,
+				76E6F3471FD7232B0080A2EE /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

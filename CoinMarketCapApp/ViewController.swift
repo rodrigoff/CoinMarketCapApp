@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Macaw
 import Moya
 import RxCocoa
 import RxSwift
@@ -42,12 +41,25 @@ class ViewController: UIViewController {
                 }
             }
             .disposed(by: self.disposeBag)
-        
+
         tableView.rx.modelSelected(Currency.self)
             .subscribe(onNext: { currency in
-                print(currency)
+                self.performSegue(withIdentifier: "showDetails", sender: currency)
             })
             .disposed(by: disposeBag)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        super.prepare(for: segue, sender: sender)
+        
+        switch (segue.identifier ?? "") {
+        case "showDetails":
+            if let detailsViewController = segue.destination as? DetailsViewController {
+                detailsViewController.currency = sender as? Currency
+            }
+        default:
+            fatalError("Unexpected Segue Identifier; \(segue.identifier)")
+        }
     }
 }
 
