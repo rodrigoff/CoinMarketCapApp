@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		761311271FD4CEED001DA107 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761311261FD4CEED001DA107 /* AppDelegate.swift */; };
-		761311291FD4CEEE001DA107 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761311281FD4CEEE001DA107 /* ViewController.swift */; };
+		761311291FD4CEEE001DA107 /* CurrencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761311281FD4CEEE001DA107 /* CurrencyViewController.swift */; };
 		7613112C1FD4CEEE001DA107 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7613112A1FD4CEEE001DA107 /* Main.storyboard */; };
 		7613112E1FD4CEEE001DA107 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7613112D1FD4CEEE001DA107 /* Assets.xcassets */; };
 		761311311FD4CEEE001DA107 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7613112F1FD4CEEE001DA107 /* LaunchScreen.storyboard */; };
@@ -17,6 +17,7 @@
 		7613114A1FD4D2F7001DA107 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761311491FD4D2F7001DA107 /* Currency.swift */; };
 		76B8DFD61FD5669500F37775 /* CurrencyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B8DFD51FD5669500F37775 /* CurrencyTableViewCell.swift */; };
 		76E6F3471FD7232B0080A2EE /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E6F3461FD7232B0080A2EE /* DetailsViewController.swift */; };
+		76F9289A1FD8B7EF008FF445 /* CurrencyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F928991FD8B7EF008FF445 /* CurrencyViewModel.swift */; };
 		D2F186A76BEE8B8C9C25F518 /* Pods_CoinMarketCapAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 627DED3C12C98F0B3F25A5AC /* Pods_CoinMarketCapAppTests.framework */; };
 		E1BDF9B4D531DE7D665FFA3D /* Pods_CoinMarketCapApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72A468601494D89E4D448C7F /* Pods_CoinMarketCapApp.framework */; };
 /* End PBXBuildFile section */
@@ -37,7 +38,7 @@
 		72A468601494D89E4D448C7F /* Pods_CoinMarketCapApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoinMarketCapApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		761311231FD4CEED001DA107 /* CoinMarketCapApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoinMarketCapApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		761311261FD4CEED001DA107 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		761311281FD4CEEE001DA107 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		761311281FD4CEEE001DA107 /* CurrencyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyViewController.swift; sourceTree = "<group>"; };
 		7613112B1FD4CEEE001DA107 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7613112D1FD4CEEE001DA107 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		761311301FD4CEEE001DA107 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +50,7 @@
 		761311491FD4D2F7001DA107 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
 		76B8DFD51FD5669500F37775 /* CurrencyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTableViewCell.swift; sourceTree = "<group>"; };
 		76E6F3461FD7232B0080A2EE /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		76F928991FD8B7EF008FF445 /* CurrencyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyViewModel.swift; sourceTree = "<group>"; };
 		B5E0F4EF6488441393D9AA4F /* Pods-CoinMarketCapApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoinMarketCapApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoinMarketCapApp/Pods-CoinMarketCapApp.release.xcconfig"; sourceTree = "<group>"; };
 		DC946FFFFFFBDFA2E5F04EBA /* Pods-CoinMarketCapAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoinMarketCapAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CoinMarketCapAppTests/Pods-CoinMarketCapAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F4B472EDC332020F86775131 /* Pods-CoinMarketCapAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoinMarketCapAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoinMarketCapAppTests/Pods-CoinMarketCapAppTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -149,8 +151,8 @@
 			isa = PBXGroup;
 			children = (
 				76F928971FD8B5BA008FF445 /* Cells */,
+				761311281FD4CEEE001DA107 /* CurrencyViewController.swift */,
 				76E6F3461FD7232B0080A2EE /* DetailsViewController.swift */,
-				761311281FD4CEEE001DA107 /* ViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -158,6 +160,7 @@
 		76F928961FD8B5AE008FF445 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				76F928991FD8B7EF008FF445 /* CurrencyViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -408,8 +411,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7613114A1FD4D2F7001DA107 /* Currency.swift in Sources */,
-				761311291FD4CEEE001DA107 /* ViewController.swift in Sources */,
+				761311291FD4CEEE001DA107 /* CurrencyViewController.swift in Sources */,
 				761311481FD4CFE9001DA107 /* CoinMarketCapAPI.swift in Sources */,
+				76F9289A1FD8B7EF008FF445 /* CurrencyViewModel.swift in Sources */,
 				76B8DFD61FD5669500F37775 /* CurrencyTableViewCell.swift in Sources */,
 				761311271FD4CEED001DA107 /* AppDelegate.swift in Sources */,
 				76E6F3471FD7232B0080A2EE /* DetailsViewController.swift in Sources */,

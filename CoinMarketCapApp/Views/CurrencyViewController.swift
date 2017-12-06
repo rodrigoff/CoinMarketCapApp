@@ -11,20 +11,17 @@ import Moya
 import RxCocoa
 import RxSwift
 
-class ViewController: UIViewController {
+class CurrencyViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
     let disposeBag = DisposeBag()
-    let provider = MoyaProvider<CoinMarketCap>()
+    let viewModel = CurrencyViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        provider.rx.request(.ticker(start: 0, limit: 0))
-            .debug()
-            .map([Currency].self)
-            .asObservable()
+        viewModel.getCurrencies()
             .bind(to: tableView.rx.items(cellIdentifier: CurrencyTableViewCell.Identifier, cellType: CurrencyTableViewCell.self)) { index, model, cell in
                 cell.currency = model
             }
