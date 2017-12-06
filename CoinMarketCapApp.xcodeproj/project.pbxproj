@@ -108,13 +108,13 @@
 		761311251FD4CEED001DA107 /* CoinMarketCapApp */ = {
 			isa = PBXGroup;
 			children = (
+				761311261FD4CEED001DA107 /* AppDelegate.swift */,
+				761311321FD4CEEE001DA107 /* Info.plist */,
 				76F928941FD8B592008FF445 /* Layout */,
 				76F928981FD8B5E5008FF445 /* Models */,
 				76F928931FD8B58D008FF445 /* Resources */,
-				76F928951FD8B5A8008FF445 /* Views */,
 				76F928961FD8B5AE008FF445 /* ViewModels */,
-				761311261FD4CEED001DA107 /* AppDelegate.swift */,
-				761311321FD4CEEE001DA107 /* Info.plist */,
+				76F928951FD8B5A8008FF445 /* Views */,
 			);
 			path = CoinMarketCapApp;
 			sourceTree = "<group>";
@@ -139,8 +139,8 @@
 		76F928941FD8B592008FF445 /* Layout */ = {
 			isa = PBXGroup;
 			children = (
-				7613112A1FD4CEEE001DA107 /* Main.storyboard */,
 				7613112F1FD4CEEE001DA107 /* LaunchScreen.storyboard */,
+				7613112A1FD4CEEE001DA107 /* Main.storyboard */,
 			);
 			path = Layout;
 			sourceTree = "<group>";
