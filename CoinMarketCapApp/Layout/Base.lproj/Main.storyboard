@@ -23,7 +23,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="currencyCell" rowHeight="80" id="GXN-48-Y84" customClass="CurrencyTableViewCell" customModule="CoinMarketCapApp" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="CurrencyTableViewCell" rowHeight="80" id="GXN-48-Y84" customClass="CurrencyTableViewCell" customModule="CoinMarketCapApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="GXN-48-Y84" id="0ok-B6-t3T">
@@ -99,7 +99,6 @@
         <!--Details View Controller-->
         <scene sceneID="Vlf-d8-HJg">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Vrz-jZ-96X" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="FID-Hj-6Ci" customClass="DetailsViewController" customModule="CoinMarketCapApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pL0-7w-3TR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -126,6 +125,7 @@
                         <outlet property="nameLabel" destination="umO-A0-qQO" id="hwJ-cS-nM4"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vrz-jZ-96X" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1021.6" y="132.68365817091455"/>
         </scene>
